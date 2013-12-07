@@ -1,0 +1,25 @@
+---
+layout: page
+title: Blog
+tagline: Track, discover, and visualize the things that make you happy.
+show_header: false
+group: navigation
+---
+{% include JB/setup %}
+
+<div class="blog-index">
+  {% assign index = true %}
+  {% for post in site.posts limit:10 %}
+    <div class="post-preview">
+        <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
+        <h2>{{ post.title }}</h2>
+        {{ post.content | split:'<!--break-->' | first }}
+        {% if post.content contains '<!--break-->' %}
+        <a href="{{ post.url }}" class="full-article">Read on →</a>
+        {% endif %}
+    </div>
+    {% if forloop.index < posts.size %}
+        <hr>
+    {% endif %}
+  {% endfor %}
+</div>
