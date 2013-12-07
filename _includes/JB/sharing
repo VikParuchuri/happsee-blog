@@ -1,8 +1,11 @@
-{% if site.safe and site.JB.sharing.provider and page.JB.sharing != false %}
+{% if site.JB.sharing.provider and page.JB.sharing != false %}
 
 {% case site.JB.sharing.provider %}
 {% when "custom" %}
-  {% include custom/sharing %}
+  <div>
+  <div class="social-button">{% include JB/sharing-providers/twitter %}</div>
+  <div class="social-button">{% include JB/sharing-providers/facebook %}</div>
+  </div>
 {% endcase %}
 
 {% endif %}
