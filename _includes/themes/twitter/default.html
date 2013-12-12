@@ -22,6 +22,8 @@
     <link href="{{ ASSET_PATH }}/css/linecons.css" rel="stylesheet">
     <link href="{{ ASSET_PATH }}/css/icomoon.css" rel="stylesheet" >
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 
     <link rel="shortcut icon" href="{{ ASSET_PATH }}/img/favicon.png">
 
@@ -39,70 +41,74 @@
 
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
-  </head>
+    <script src="{{ ASSET_PATH }}/js/height.js"></script>
+    </head>
 
-  <body>
-  <div id="navbar-main">
-      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-          <div class="container">
-              <div class="navbar-header">
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                  </button>
-                  <a class="navbar-brand" href="{{ site.main_site_url }}">
-                      <img src="{{ site.main_site_url}}/static/img/logo.png" class="brand-img">
-                  </a>
-              </div>
+    <body>
+    <div id="navbar-main">
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="{{ site.main_site_url }}">
+                        <img src="{{ site.main_site_url}}/static/img/logo.png" class="brand-img">
+                    </a>
+                </div>
 
-              <div class="navbar-collapse collapse">
-                  <ul class="nav navbar-nav">
-                      {% assign pages_list = site.pages %}
-                      {% assign group = 'navigation' %}
-                      {% include JB/pages_list %}
-                  </ul>
-              </div>
-          </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li><a href="http://www.happsee.com/">Home</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        {% assign pages_list = site.pages %}
+                        {% assign group = 'navigation' %}
+                        {% include JB/pages_list %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+     </div>
+    <div id="wrap">
+      <div class="container outer-container">
+
+        <div class="content outer-content">
+          {{ content }}
+        </div>
+
       </div>
-   </div>
-  <div id="wrap">
-    <div class="container">
-
-      <div class="content">
-        {{ content }}
-      </div>
-
     </div>
-  </div>
 
-  <div id="footerwrap">
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-4 centered">
-                  <h3>Our Headquarters</h3>
-                  <br/>
-                  <p>Central Square <br/>
-                      Cambridge, MA, USA <br/>
-                      Tel.: (617) 520-4566 <br/>
-                      admin@happsee.com
-                  </p>
-              </div>
+    <div id="footerwrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 centered">
+                    <h3>Our Headquarters</h3>
+                    <br/>
+                    <p>Central Square <br/>
+                        Cambridge, MA, USA <br/>
+                        Tel.: (617) 520-4566 <br/>
+                        admin@happsee.com
+                    </p>
+                </div>
 
-              <div class="col-lg-4 centered">
-              </div>
+                <div class="col-lg-4 centered">
+                </div>
 
-              <div class="col-lg-4 centered">
-                  <h3>We Are Social</h3>
-                  <br/>
-                  <p><a href="https://twitter.com/happseeapp" class="icon icon-twitter"></a>  <a href="https://www.facebook.com/pages/Happsee/1376450312602524" class="icon icon-facebook"> </a></p>
-              </div>
+                <div class="col-lg-4 centered">
+                    <h3>We Are Social</h3>
+                    <br/>
+                    <p><a href="https://twitter.com/happseeapp" class="icon icon-twitter"></a>  <a href="https://www.facebook.com/pages/Happsee/1376450312602524" class="icon icon-facebook"> </a></p>
+                </div>
 
-          </div>
-          <br/>
-          <br/>
-      </div>
-      {% include JB/analytics %}
-  </div>
-  </body>
-</html>
+            </div>
+            <br/>
+            <br/>
+        </div>
+        {% include JB/analytics %}
+    </div>
+    </body>
+  </html>

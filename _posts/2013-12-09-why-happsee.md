@@ -1,15 +1,13 @@
 ---
 layout: post
-title: "Why does it all matter?"
-tagline: "When an app to track your happiness makes sense."
+title: "Why happiness tracking matters"
 description: "Happiness is hard to define and even harder to track.  Join us on a journey to accomplish both."
 category: "intro"
 tags: []
 author: Vik Paruchuri
+author_link: http://www.vikparuchuri.com
 ---
 {% include JB/setup %}
-
-### The right question
 
 For most of my life, I have struggled to figure out what matters most.  I doubt that I am alone in this.  Data is everywhere these days -- I rarely buy a book without consulting Amazon or walk into a restaurant without checking its rating on Yelp.  Yet the more integral that data becomes, the less relevant to my life it seems.  Sure, I can find out what the best book to buy is, or where I should eat lunch, but why do those things matter?
 
@@ -19,13 +17,13 @@ After thinking about the disconnect for a while, I started trying to answer the 
 
 <!--break-->
 
-### What can we do about it?
+## What can we do about it?
 
 Interestingly, this expectation is almost never explicit.  I don't say "oh, I need a momentary burst of enjoyment, let me check Facebook."  More often, it is "I haven't checked Facebook in a while, let me check Facebook."  Given this lack of self-reflection, it is extremely hard to nail down exactly how much Facebook contributes to my happiness.  It is similar with other services.  So how to tell if my activities are actually making me happy?  Do higher rated books on Amazon actually give me more happiness?  To be slightly more broad, does travelling make me happier?  Does socializing make me happier?  I couldn't answer these questions well, important as they were.
 
 The reason I was unable to answer these questions was the absence of reliable data.  Sure, I can reflect and tell you that I think biking makes me happier, but I can't break that down into short term, medium term, and long term happiness, and I certainly can't tell you how my feelings about biking have changed over time.
 
-### Happsee
+## Happsee
 
 This lack of data led me to start working on [Happsee](http://www.happsee.com).  Happsee is a service (currently available as an android application, and coming soon to web and other platforms) that allows you to track, visualize, and discover the things that make you happy.  Most importantly, it lets you share your happiness level with the people closest to you.  You are prompted a few times a day to enter in some information about your happiness.  You can then explore these entries in various ways.  Happsee has only been around for about a month, but I and the other people using it have been collecting some amazing data.
 

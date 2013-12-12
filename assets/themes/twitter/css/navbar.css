@@ -10,20 +10,24 @@
 
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'PT Serif', sans-serif;
+    line-height: 1.5em;
+}
+
+h1{
+    font-size: 2.6em;
 }
 
 h2 {
     color: #333;
-    font-size: 26px;
+    font-size: 2.1em;
     font-weight: 400;
     letter-spacing: 2px;
-    margin-left: 15px;
 }
 
 h4 {
     color: #333;
-    font-size: 18px;
+    font-size: 1.8em;
     font-weight: 300;
     letter-spacing: 2px;
 
@@ -106,6 +110,8 @@ licon {
 html,
 body {
     height: 100%;
+    line-height: 1.5em;
+    font-family: 'PT Sans', sans-serif;
     /* The html and body elements cannot have any padding or margin. */
 }
 /* Wrapper for page content to push down footer */
@@ -113,8 +119,15 @@ body {
     height: auto;
     min-height: 100%;
     /* Negative indent footer by it's height */
-    padding: 70px 0 0px;
-    margin: 0 auto 60px;
+    padding: 0px;
+    margin: 0px;
+    background: #252525;
+}
+
+.content p{
+    font-size: 1.1em;
+    line-height: 1.6em;
+    margin-bottom: 1.5em;
 }
 
 #footerwrap {
@@ -136,4 +149,21 @@ body {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
 }
+
+div.outer-container{
+    height:auto;
+    min-height:100%;
+    background: #f8f8f8 url('/assets/themes/twitter/img/noise.png?1371578495') top left;
 }
+
+div.outer-content{
+    padding: 70px 40px 60px;
+    margin: 0 auto 0px;
+}
+
+@media (max-width: 768px) {
+    div.outer-content{
+        padding: 70px 10px 60px;
+    }
+}
+
